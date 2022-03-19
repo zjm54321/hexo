@@ -1,0 +1,222 @@
+banner:
+# 标题栏
+  enable: true
+  title:
+    - 明明
+    - 铭
+    - 明
+    - 铭
+    - の
+    - 小站
+  src: /js/ui/banner.js
+  border: true
+  # 是否开启标语中字符的左右边框
+  cloud:
+  # 在首页下方显示流动的云
+    enable: true
+    color: "white"
+  go_down:
+  # 向下箭头按钮（点击翻页）
+    enable: true
+    icon: icon-arrow-down-s-line
+
+notice:
+# 公告
+  enable: false
+  content: 欢迎光临！
+
+mode: auto
+# 黑暗模式开关
+
+social:
+# 社交图标
+  - name: QQ
+    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
+    link: https://wpa.qq.com/msgrd?v=3&uin=1779036876&site=qq&menu=yes
+    icon: icon-qq-line
+    color: "#12B7F5"
+  - name: GitHub
+    link: https://github.com/zjm54321
+    icon: icon-github-line
+    color: "#181717"
+  - name: E-Mail
+    link: mailto:1779036876@qq.com
+    icon: icon-mail-line
+    color: "#8E71C1"
+  - name: 哔哩哔哩动画
+    link: https://space.bilibili.com/412244715
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
+  - name: Telegram
+    link: https://t.me/Zjmmmm
+    icon: icon-telegram-line
+    color: "#0088CC"
+  - name: RSS
+    link: /atom.xml # config.feed.path
+    icon: icon-rss-line
+    color: orange
+
+trianglify:
+# 背景
+  enable: true
+  cellSize: 75
+  width: 1920
+  height: 1080
+  palette: '["YlGnBu", "GnBu", "Purples", "Blues"]'
+  opacity: 0.5
+
+avatar:
+# 侧边栏
+  enable: true
+  url: https://cdn.jsdelivr.net/gh/zjm54321/pictures/avater.jpg
+  rounded: true
+  opacity: 1
+  mickey_mouse: false
+  status:
+    enable: true
+    emoji: 😭
+    message: 永远相信美好的事情即将发生
+
+footer:
+# 页眉
+  since: 2020
+  icon:
+    name: icon-cloud-line
+    animated: true
+    color: "#0078E7"
+  powered:
+    enable: true
+  live_time:
+    enable: true
+    prefix: 本博客已运行
+    suffix: (●'◡'●)
+    start_time: "2021-01-19T00:00:00"
+
+#algolia_search:
+# 搜索
+#  enable: true
+#  src: /js/search/algolia-search.js
+#  hits:
+#    per_page: 10
+local_search:
+  enable: true
+
+wordcount:
+# 字数统计
+  enable: true
+  count: true
+  time: true
+
+girls:
+# 标签
+  enable: false
+
+pages:
+  - name: 我的小伙伴们
+    url: /links/
+    icon: icon-genderless-line
+    color: dodgerblue
+
+
+menu:
+  custom:
+    title: 留言板
+    path: /about/#comment
+    icon: icon-clipboard-line
+
+wordcloud:
+  enable: true
+
+baidu_push: true
+
+google_analytics:
+  enable: true
+  id: G-EHXMM70MZZ
+
+google_adsense:
+  enable: true
+  client: ca-pub-7109020926751133
+
+#valine:
+#  enable: true
+#  appId: o768CG8RBDuGUSnno1kAfhLf-gzGzoHsz
+#  appKey: 8u3Q2jloRlspntbhlMqcUX08
+#  placeholder: Just go go # 
+#  avatar: 
+#  meta:
+#    - nick
+#    - mail
+#    - link
+#  pageSize: 10 
+#  highlight: true
+#  recordIP: true
+#  enableQQ: true
+minivaline:
+  enable: false
+  md: true
+  # 更多选项 https://minivaline.js.org/docs/cn/#/Options 按照yml格式继续填写即可 （除了 [el] 选项）
+  # emoticonUrl 等列表选项 可参考 https://github.com/MiniValine/hexo-next-minivaline
+  # 下面是一个例子：
+  backend: waline
+  serverURL: https://mini-valine-two.vercel.app/
+
+github_issues:
+  enable: false
+
+github_discussions:
+  enable: false
+
+comment:
+  tips:
+    - 如果您有任何关于博客内容的相关讨论，欢迎在评论区与我交流。
+
+reward:
+  enable: true
+  icon: icon-hand-coin-line
+  comment: 我，秦始皇，打钱，懂？[doge]
+  # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
+  methods:
+    - name: 支付宝
+      path: https://cdn.jsdelivr.net/gh/zjm54321/pictures/alipay_money.jpg
+      color: "#00A3EE"
+      icon: icon-alipay-line
+    - name: QQ 支付
+      path: https://cdn.jsdelivr.net/gh/zjm54321/pictures/qq_money.png
+      color: "#12B7F5"
+      icon: icon-qq-line
+    - name: 微信支付
+      path: https://cdn.jsdelivr.net/gh/zjm54321/pictures/wx_money.png
+      color: "#2DC100"
+      icon: icon-wechat-pay-linee
+
+cursor:
+  enable: true
+  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
+  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
+  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
+
+live2d:
+  enable: true
+  # 推荐使用 jsdelivr 的 CDN 来加载
+  scriptFrom: jsdelivr
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    # 推荐使用 CDN 来加载模型
+    use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
+  react:
+    opacity: 0.7
+  # dialog:
+  #   # 是否开启对话框
+  #   enable: true
+  #   # 是否使用一言
+  #   hitokoto: true
